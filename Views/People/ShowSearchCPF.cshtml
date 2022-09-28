@@ -1,0 +1,48 @@
+﻿<h4>Pesquisar Pessoa</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="ShowSearchCPFResults">
+
+            <div class="form-group">
+                Pesquisar por CPF
+                <label for="SearchCPF" class="control-label"></label>
+                <input name="SearchCPF" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Search" class="btn btn-primary" />
+            </div>
+        </form>
+        <br />
+        <form asp-action="ShowSearchNameResult">
+            <div class="form-group">
+                Pesquisar por Nome
+                <label for="SearchName" class="control-label"></label>
+                <input name="SearchName" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Search" class="btn btn-primary" />
+            </div>
+        </form>
+        <br />
+        <form asp-action="ShowSearchRGResult">
+            <div class="form-group">
+                Pesquisar por RG
+                <label for="SearchRg" class="control-label"></label>
+                <input name="SearchRg" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Search" class="btn btn-primary" />
+            </div>
+        </form>
+
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
